@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会社概要 | La Baleine</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @media (max-width: 768px) {
+            .company-info {
+                padding: 5rem 0 !important;
+            }
+
+            .info-row {
+                flex-direction: column !important;
+                gap: 0.5rem !important;
+                padding: 1.5rem 0 !important;
+            }
+
+            .info-label {
+                width: auto !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">LA BALEINE<span>.</span></a>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="mission.html">Mission</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="company.html">Company</a></li>
+                <li><a href="contact.html" class="btn btn-primary" style="padding: 0.8rem 2rem;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header"
+            style="padding-top: 20rem; background: linear-gradient(to bottom, #f0f7ff, var(--bg-white)); text-align: center;">
+            <div class="container">
+                <h1 class="reveal">COMPANY PROFILE</h1>
+                <p class="reveal"
+                    style="color: #000000; margin-top: 2rem; font-size: 1.1rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    私たちは、同じ夢を追いかけるあなたの「いちばん近いパートナー」であり続けます。</p>
+            </div>
+        </section>
+
+        <!-- Company Info Table -->
+        <section class="company-info" style="padding: 10rem 0;">
+            <div class="container">
+                <div class="reveal" style="max-width: 800px; margin: 0 auto;">
+                    <div class="info-row" style="display: flex; border-bottom: 1px solid var(--border-light); padding: 2.5rem 0;">
+                        <div class="info-label" style="width: 200px; font-weight: 800; color: var(--brand-blue); font-family: 'Outfit'; flex-shrink: 0;">
+                            団体名</div>
+                        <div style="font-weight: 600; color: #000000;">ラバレーヌ（La Baleine）</div>
+                    </div>
+                    <div class="info-row" style="display: flex; border-bottom: 1px solid var(--border-light); padding: 2.5rem 0;">
+                        <div class="info-label" style="width: 200px; font-weight: 800; color: var(--brand-blue); font-family: 'Outfit'; flex-shrink: 0;">
+                            代表者</div>
+                        <div style="color: #000000;">共同代表一同</div>
+                    </div>
+                    <div class="info-row" style="display: flex; border-bottom: 1px solid var(--border-light); padding: 2.5rem 0;">
+                        <div class="info-label" style="width: 200px; font-weight: 800; color: var(--brand-blue); font-family: 'Outfit'; flex-shrink: 0;">設立
+                        </div>
+                        <div style="color: #000000;">2026年3月</div>
+                    </div>
+                    <div class="info-row" style="display: flex; border-bottom: 1px solid var(--border-light); padding: 2.5rem 0;">
+                        <div class="info-label" style="width: 200px; font-weight: 800; color: var(--brand-blue); font-family: 'Outfit'; flex-shrink: 0;">
+                            事業内容</div>
+                        <div style="color: #000000;">マーケティング戦略立案、広告運用代行、SNS運用・コンサルティング、Webサイト制作、ブランディング支援</div>
+                    </div>
+                    <div class="info-row" style="display: flex; border-bottom: 1px solid var(--border-light); padding: 2.5rem 0;">
+                        <div class="info-label" style="width: 200px; font-weight: 800; color: var(--brand-blue); font-family: 'Outfit'; flex-shrink: 0;">
+                            所在地</div>
+                        <div style="color: #000000;">日本国内（主要拠点：オンライン/全国対応）</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="padding: 5rem 0; background: var(--text-primary); color: #ffffff;">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4rem;">
+                <div>
+                    <a href="index.html" class="logo" style="color: #ffffff; font-size: 2rem;">LA
+                        BALEINE<span>.</span></a>
+                    <p style="margin-top: 1.5rem; color: rgba(255,255,255,0.6);">あなたの「伝えたい」を、もっと身近に。</p>
+                </div>
+                <div style="display: flex; gap: 6rem;">
+                    <ul style="list-style: none;">
+                        <li><a href="index.html" style="color: #ffffff; text-decoration: none;">HOME</a></li>
+                        <li><a href="mission.html" style="color: #ffffff; text-decoration: none;">Mission</a></li>
+                        <li><a href="services.html" style="color: #ffffff; text-decoration: none;">Services</a></li>
+                    </ul>
+                    <ul style="list-style: none;">
+                        <li><a href="company.html" style="color: #ffffff; text-decoration: none;">Company</a></li>
+                        <li><a href="contact.html" style="color: #ffffff; text-decoration: none;">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="margin-top: 6rem; text-align: center; color: rgba(255,255,255,0.4);">&copy; 2026 La Baleine.
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
