@@ -572,3 +572,301 @@ nav {
         clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%);
     }
 }
+
+/* ============================================
+   PORTAL SECTIONS (index.html)
+   ============================================ */
+
+.portal-section {
+    padding: 15rem 0;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+}
+
+.portal-section:hover {
+    background-color: #f8fafc;
+}
+
+.section-slanted:hover {
+    background-color: #005bad !important;
+}
+
+.portal-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.portal-content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.portal-text {
+    flex: 1;
+}
+
+.portal-label {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    color: var(--brand-blue);
+    letter-spacing: 0.2em;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.portal-title {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.portal-desc {
+    font-size: 1.1rem;
+    color: #000000;
+    max-width: 500px;
+    margin-bottom: 3rem;
+}
+
+.portal-btn {
+    font-weight: 700;
+    color: var(--brand-blue);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.portal-btn::after {
+    content: "→";
+    transition: transform 0.3s ease;
+}
+
+.portal-section:hover .portal-btn::after {
+    transform: translateX(10px);
+}
+
+/* ============================================
+   CONTACT FORM (contact.html)
+   ============================================ */
+
+.form-group {
+    margin-bottom: 2.5rem;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    color: var(--text-primary);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 1.2rem;
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    background: #fdfdfd;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition-smooth);
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--brand-blue);
+    box-shadow: 0 0 0 4px rgba(0, 103, 192, 0.1);
+}
+
+/* ============================================
+   MISSION PAGE (mission.html)
+   ============================================ */
+
+.promises-row {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+}
+
+.promise-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+    max-width: 260px;
+}
+
+.promise-circle {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.8rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    flex-shrink: 0;
+}
+
+.promise-num {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1;
+    margin-bottom: 0.2rem;
+}
+
+.promise-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.7;
+}
+
+/* ============================================
+   SUBPAGE-SPECIFIC RESPONSIVE RULES
+   ============================================ */
+
+@media (max-width: 768px) {
+    /* Portal (index.html) */
+    .portal-section[style*="clip-path: polygon(0 0"] {
+        clip-path: none !important;
+        margin-top: 0 !important;
+        padding: 6rem 0 !important;
+    }
+
+    /* Services (services.html) */
+    .service-item {
+        margin-bottom: 4rem !important;
+        gap: 2rem !important;
+    }
+
+    .service-item > div {
+        min-width: 0 !important;
+        flex: 1 1 100% !important;
+    }
+
+    .service-item h2 {
+        font-size: 2rem !important;
+    }
+
+    .service-details {
+        padding: 5rem 0 !important;
+    }
+
+    /* Company (company.html) */
+    .company-info {
+        padding: 5rem 0 !important;
+    }
+
+    .info-row {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+        padding: 1.5rem 0 !important;
+    }
+
+    .info-label {
+        width: auto !important;
+    }
+
+    /* Contact (contact.html) */
+    .contact-section {
+        padding: 4rem 0 !important;
+    }
+
+    form.card {
+        padding: 2.5rem !important;
+    }
+
+    /* Mission (mission.html) */
+    .vision-flex {
+        gap: 3rem !important;
+    }
+
+    .vision-quote {
+        font-size: 1.3rem !important;
+    }
+
+    .vision-h2 {
+        font-size: 2rem !important;
+    }
+
+    .vision-section {
+        padding: 5rem 0 !important;
+    }
+
+    .promises-row {
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    .promise-circle {
+        width: 130px;
+        height: 130px;
+    }
+
+    .promise-num {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Portal (index.html) */
+    .portal-label {
+        font-size: 0.8rem;
+    }
+
+    .portal-btn {
+        font-size: 0.9rem;
+    }
+
+    /* Services (services.html) */
+    .service-item h2 {
+        font-size: 1.6rem !important;
+    }
+
+    .service-item {
+        margin-bottom: 3rem !important;
+    }
+
+    /* Contact (contact.html) */
+    form.card {
+        padding: 1.5rem !important;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    /* Mission (mission.html) */
+    .vision-quote {
+        font-size: 1.1rem !important;
+    }
+
+    .vision-h2 {
+        font-size: 1.6rem !important;
+    }
+
+    .promises-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .promise-item {
+        max-width: 100%;
+        width: 100%;
+    }
+}
