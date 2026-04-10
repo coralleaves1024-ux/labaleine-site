@@ -276,8 +276,8 @@ nav {
 /* ===== Scattered 3D Shapes ===== */
 .scatter-shapes {
     position: relative;
-    height: 0;
-    overflow: visible;
+    height: 80px;
+    width: 100%;
     pointer-events: none;
     z-index: 5;
 }
